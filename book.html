@@ -80,6 +80,8 @@ const bookAppointment = () => {
     let key = `quick-appointment`;
     let value = `${age}-${name}-${mobileNumber}`;
     window.localStorage.setItem(key, value);
+    document.getElementById('capture-data').style.display = 'none';
+    document.getElementById('capture-appointment').style.display = 'block';
 }
 
 const checkUser = () => {
